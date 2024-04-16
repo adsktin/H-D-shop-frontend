@@ -14,10 +14,3 @@ export default withMT(
 }
 )
 
-// module.exports = {
-//   content: ["./src/**/*.{js,jsx,ts,tsx}"], // Update paths to your components
-//   theme: {
-//     extend: {}, // Add custom styles here (optional)
-//   },
-//   plugins: [], // Add plugins here (optional)
-// };

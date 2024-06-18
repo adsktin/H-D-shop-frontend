@@ -1,5 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import {
+    Rating,
+    Typography,
+  } from "@material-tailwind/react";
 
 export default function () {
     return (
@@ -10,12 +14,18 @@ export default function () {
                         className="object-cover object-center w-full" />
                 </div>
             </div>
-            <div className='m-2'>
+            <div className='mx-4'>
                 <h3 className="w-full px-1 mt-4 text-lg text-black truncate line-clamp-1">iPhone 13 128GB</h3>
                 <div className='items-center lg:flex'>
                     <p className="px-1 mt-1 text-lg font-bold text-red-600">13.690.000đ</p>
                     <p className="px-1 mt-1 text-sm font-medium text-gray-600 line-through">18.990.000đ</p>
                 </div>
+            </div>
+            <div className="my-4 flex items-center gap-2 justify-center">
+                <Rating value={4} className="text-amber-500" />
+                {/* <Typography className="!text-sm font-bold !text-gray-700">
+                4.0/5
+                </Typography> */}
             </div>
         </Link>
     )

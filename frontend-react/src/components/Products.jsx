@@ -1,4 +1,8 @@
 import { Link } from 'react-router-dom';
+import {
+  Rating,
+  Typography,
+} from "@material-tailwind/react";
 
 const products = [
   {
@@ -104,7 +108,7 @@ export default function Products() {
         </h2>
         <div className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 xl:gap-x-8">
           {products.map((product) => (
-            <Link key={product.id} to={product.href} className="rounded-lg shadow-2xl group">
+            <Link key={product.id} to={product.href} className="rounded-lg shadow-2xl group p-2">
               <div className="w-full overflow-hidden bg-gray-200 rounded-lg aspect-h-1 aspect-w-1 xl:aspect-h-8 xl:aspect-w-7">
                 <img
                   src={product.imageSrc}
@@ -112,14 +116,19 @@ export default function Products() {
                   className="object-cover object-center w-full h-full group-hover:opacity-75"
                 />
               </div>
-              <div className='m-2'>
+              <div className='mx-4'>
                 <h3 className="w-full px-1 mt-4 text-lg text-black truncate line-clamp-1">{product.name}</h3>
                 <div className='items-center lg:flex'>
                   <p className="px-1 mt-1 text-lg font-bold text-red-600">{product.price}</p>
                   <p className="px-1 mt-1 text-sm font-medium text-gray-600 line-through">{product.discount}</p>
                 </div>
               </div>
- 
+              <div className="my-4 flex items-center justify-center">
+                <Rating value={4} className="text-amber-500" />
+                {/* <Typography className="!text-sm font-bold !text-gray-700">
+                4.0/5
+                </Typography> */}
+              </div>
             </Link>
           ))}
         </div>

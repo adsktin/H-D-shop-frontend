@@ -1,5 +1,5 @@
 import { Typography } from "@material-tailwind/react";
- 
+import imagelogo from '../assets/logo/logo.png';
 const LINKS = [
   {
     title: "Product",
@@ -22,9 +22,27 @@ export function Footer() {
     <footer className="relative w-full">
       <div className="w-full px-8 mx-auto max-w-7xl">
         <div className="grid justify-between grid-cols-1 gap-4 md:grid-cols-2">
-          <Typography variant="h5" className="mb-6">
-            H & D Shop
-          </Typography>
+
+        <Typography
+          as="a"
+          href="/"
+          variant="h6"
+          className="flex mr-4 cursor-pointer py-1.5 lg:ml-2 items-center"
+        > 
+          <div className="flex-shrink-0">
+            <img
+                className="w-full h-14"                    
+                src={imagelogo}
+                alt="Your Company"
+            />
+          </div>
+          <p className="text-2xl text-blue-600">
+            H&D
+          </p>  
+          <p className="text-2xl text-black">
+            MOBILE
+          </p>        
+        </Typography>
           <div className="grid justify-between grid-cols-3 gap-4">
             {LINKS.map(({ title, items }) => (
               <ul key={title}>

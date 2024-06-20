@@ -6,6 +6,7 @@ import CarouselTUK from '../components/Carousel';
 import { FeaturedImageGallery } from '../components/OverviewProduct';
 import Login from '../pages/Auth/Login';
 import Signup from '../pages/Auth/Signup';
+import Cart from '../pages/Auth/Cart';
 
 function Layout() {
   return (
@@ -17,8 +18,9 @@ function Layout() {
       <Products/>
       <FeaturedImageGallery/>
       <Footer/> */}
-      <Login/>
-      <Signup/>
+      {/* <Login/>
+      <Signup/> */}
+      <Cart/>
     </div>
   );
 }

@@ -7,10 +7,12 @@ import { FeaturedImageGallery } from '../components/OverviewProduct';
 import Login from '../pages/Auth/Login';
 import Signup from '../pages/Auth/Signup';
 import Cart from '../pages/Auth/Cart';
+import ProductDetail from '../components/ProductDetail/ProductDetail';
+
 
 function Layout() {
   return (
-    <div className="bg-gray-100 w-sreen h-full h-">
+    <div className="h-full bg-gray-100 w-sreen h-">
       <Header/>
       {/* <div className='my-10'>
         <CarouselTUK/>
@@ -20,7 +22,8 @@ function Layout() {
       <Footer/> */}
       {/* <Login/>
       <Signup/> */}
-      <Cart/>
+      {/* <Cart/> */}
+      <ProductDetail/>
     </div>
   );
 }

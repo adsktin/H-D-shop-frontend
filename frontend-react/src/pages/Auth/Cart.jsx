@@ -1,13 +1,7 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import { Footer } from '../../layout/Footer';
 import Order from "./Order";
 
-import {
-  Card,
-  Checkbox,
-  Button,
-  Typography,
-} from "@material-tailwind/react";
 import CartItem from '../../components/CartItem';
 
 function Cart (){

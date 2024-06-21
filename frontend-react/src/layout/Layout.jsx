@@ -7,6 +7,9 @@ import { FeaturedImageGallery } from '../components/OverviewProduct';
 import Login from '../pages/Auth/Login';
 import Signup from '../pages/Auth/Signup';
 import Cart from '../pages/Auth/Cart';
+import Payment from '../pages/Auth/Payment';
+import OrderSuccess from '../pages/Auth/OrderSuccess';
+import OrderFail from '../pages/Auth/OrderFail';
 
 function Layout() {
   return (
@@ -20,7 +23,10 @@ function Layout() {
       <Footer/> */}
       {/* <Login/>
       <Signup/> */}
-      <Cart/>
+      {/* <Cart/> */}
+      {/* <Payment/> */}
+      <OrderSuccess/>
+      <OrderFail/>
     </div>
   );
 }

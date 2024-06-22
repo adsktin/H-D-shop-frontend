@@ -24,6 +24,7 @@ function Layout() {
       <Signup/> */}
       {/* <Cart/> */}
       <ProductDetail/>
+      
     </div>
   );
 }

@@ -30,7 +30,7 @@ const navListMenuItems = [
   {
     title: "Giảm giá",
     description: "Find the perfect solution for your needs.",
-    icon: svgSale,
+    icon: svgHuawei,
   },
   {
     title: "Điện thoại",
@@ -60,7 +60,7 @@ const navListMenuItems = [
   {
     title: "Realme",
     description: "Reach out to us for assistance or inquiries",
-    icon: svgSale,
+    icon: svgHuawei,
   },
   {
     title: "Vivo",
@@ -75,12 +75,12 @@ const navListMenuItems = [
   {
     title: "Nokia",
     description: "Reach out to us for assistance or inquiries",
-    icon: svgSale,
+    icon: svgHuawei,
   },
   {
     title: "OnePlus",
     description: "Reach out to us for assistance or inquiries",
-    icon: svgSale,
+    icon: svgHuawei,
   },
 ];
  
@@ -172,10 +172,10 @@ const styleListItem = "flex items-center gap-2 py-2 pr-4";
 function NavList() {
   return (
     <List className="p-0 mt-4 mb-6 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
-      <Link to="#">
+      <Link to="/about">
         <Typography
           // as="a"
-          // href="#"
+          // href="/about"
           variant="h5"
           color="black"
           // className="font-semibold"
@@ -188,7 +188,7 @@ function NavList() {
       {/* Menu */}
       <NavListMenu /> {/* SanPham */}
       {/*  */}
-      <Link to="#">
+      <Link to="/blog">
         <Typography
           // as="a"
           // href="#"
@@ -220,7 +220,7 @@ export function Header() {
       <div className="flex items-center justify-between lg:justify-center text-blue-gray-900">
       <Typography
           as="a"
-          href="/"
+          href="/home"
           variant="h6"
           className="flex mr-20 cursor-pointer py-1.5 lg:ml-2 items-center"
         > 
@@ -323,7 +323,7 @@ export function Header() {
         </svg>        Đăng xuất</MenuItem>
       </MenuList>
     </Menu>
-         <Link to="/products">
+         <Link to="/shoppingcard">
             <button
               type="button"
               className="inline-block rounded-full transform hover:-translate-y-0.5 bg-black p-2 uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"

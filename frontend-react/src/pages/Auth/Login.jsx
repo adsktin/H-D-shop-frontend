@@ -117,10 +117,10 @@ function Login() {
                     </Button>
                     <Typography color="gray" className="my-4 text-center font-normal">
                         Bạn chưa có tài khoản?{" "}
-                        <a href="signup" className="font-medium text-blue-500">
+                        <Link to="/signup" className="font-medium text-blue-500">Đăng Ký</Link>
+                        {/* <a href="/login" className="font-medium text-blue-500">
                         Đăng Ký
-                        </a>
-                        <Link to="si"/>
+                        </a>                     */}
                     </Typography>
                     <div className="flex items-center">
                         <hr className="w-full border-t border-gray-500" />

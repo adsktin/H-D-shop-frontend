@@ -1,8 +1,8 @@
 import React from "react";
 import imagelogo from '../assets/logo/logo.png';
-import svgProducts from '../assets/icon/products.svg';
+import svgProducts from '../assets/brand/nokia.svg';
 import svgSale from '../assets/icon/sale.svg';
-
+import svgHuawei from '../assets/brand/huawei.svg';
 import {
   Navbar,
   Collapse,
@@ -25,12 +25,12 @@ const navListMenuItems = [
   {
     title: "Tất cả sản phẩm",
     description: "Find the perfect solution for your needs.",
-    icon: svgProducts,
+    icon: svgHuawei,
   },
   {
     title: "Giảm giá",
     description: "Find the perfect solution for your needs.",
-    icon: svgSale,
+    icon: svgHuawei,
   },
   {
     title: "Điện thoại",
@@ -60,7 +60,7 @@ const navListMenuItems = [
   {
     title: "Realme",
     description: "Reach out to us for assistance or inquiries",
-    icon: svgProducts,
+    icon: svgHuawei,
   },
   {
     title: "Vivo",
@@ -75,12 +75,12 @@ const navListMenuItems = [
   {
     title: "Nokia",
     description: "Reach out to us for assistance or inquiries",
-    icon: svgProducts,
+    icon: svgHuawei,
   },
   {
     title: "OnePlus",
     description: "Reach out to us for assistance or inquiries",
-    icon: svgProducts,
+    icon: svgHuawei,
   },
 ];
  
@@ -90,30 +90,25 @@ function NavListMenu() {
   const renderItems = navListMenuItems.map(
     ({ icon, title, description }, key) => (
       <a href="#" key={key}>
-        <MenuItem className="flex items-center gap-3 rounded-lg">
-          <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2 ">
-            {" "}
-            {/* {React.createElement(icon, {
-              strokeWidth: 2,
-              className: "h-6 text-gray-900 w-6",
-            })} */}
-            <img src={icon} alt="" className="w-6 h-6 text-gray-900" />
+        <MenuItem className="items-center justify-center gap-3 rounded-lg hover:border hover:border-black">
+          <div className="rounded-lg !bg-blue-gray-50 p-2 flex items-center justify-center"> 
+            <img src={icon} alt="" className="h-24 text-gray-900" />
           </div>
-          <div>
-            <Typography
+          {/* <div> */}
+            {/* <Typography
               variant="h3"
               color="blue-gray"
               className="flex items-center text-lg font-bolgg"
             >
               {title}
-            </Typography>
-            <Typography
+            </Typography> */}
+            {/* <Typography
               variant="paragraph"
               className="text-xs !font-medium text-blue-gray-500"
             >
               {description}
-            </Typography>
-          </div>
+            </Typography> */}
+          {/* </div> */}
         </MenuItem>
       </a>
     ),
@@ -177,10 +172,10 @@ const styleListItem = "flex items-center gap-2 py-2 pr-4";
 function NavList() {
   return (
     <List className="p-0 mt-4 mb-6 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
-      <Link to="#">
+      <Link to="/about">
         <Typography
           // as="a"
-          // href="#"
+          // href="/about"
           variant="h5"
           color="black"
           // className="font-semibold"
@@ -193,7 +188,7 @@ function NavList() {
       {/* Menu */}
       <NavListMenu /> {/* SanPham */}
       {/*  */}
-      <Link to="#">
+      <Link to="/blog">
         <Typography
           // as="a"
           // href="#"
@@ -225,7 +220,7 @@ export function Header() {
       <div className="flex items-center justify-between lg:justify-center text-blue-gray-900">
       <Typography
           as="a"
-          href="/"
+          href="/home"
           variant="h6"
           className="flex mr-20 cursor-pointer py-1.5 lg:ml-2 items-center"
         > 
@@ -306,19 +301,19 @@ export function Header() {
         </MenuItem>
         <hr className="my-3" />
         <MenuItem className="flex items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 mr-3">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="mr-3 size-6">
           <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
         </svg>
         Tài khoản</MenuItem>
         <MenuItem className="flex items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 mr-3">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="mr-3 size-6">
           <path strokeLinecap="round" strokeLinejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z" />
           <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
         </svg>
         Cài đặt</MenuItem>
         <hr className="my-3" />
         <MenuItem className="flex items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 mr-3">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="mr-3 size-6">
           <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
         </svg>        Đổi mật khẩu</MenuItem>
         <hr className="my-3" />
@@ -328,7 +323,7 @@ export function Header() {
         </svg>        Đăng xuất</MenuItem>
       </MenuList>
     </Menu>
-         <Link to="/products">
+         <Link to="/shoppingcard">
             <button
               type="button"
               className="inline-block rounded-full transform hover:-translate-y-0.5 bg-black p-2 uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"

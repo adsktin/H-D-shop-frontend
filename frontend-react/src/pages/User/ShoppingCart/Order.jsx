@@ -13,10 +13,10 @@ import {
     //     // ... (các trường khác)
     //   });
   return (
-    <div className="mt-6 rounded-lg border bg-white p-6 shadow-md md:mt-0">
+    <div className="p-6 mt-6 bg-white border rounded-lg shadow-md md:mt-0">
       <div className="mb-2 ">
-        <p className="text-lg-black font-bold text-lg mt-4 text-center">Thông tin đặt hàng</p>
-        <p className="italic text-sm text-gray-500 text-lg mt-4 text-center mb-4">Vui lòng nhập đủ các trường thông tin</p>
+        <p className="mt-4 text-lg font-bold text-center text-lg-black">Thông tin đặt hàng</p>
+        <p className="mt-4 mb-4 text-sm italic text-center text-gray-500">Vui lòng nhập đủ các trường thông tin</p>
       </div>
       <form
         className="space-y-4 text-[#534F4F]"

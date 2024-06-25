@@ -1,11 +1,18 @@
-// import React, { useState } from 'react';
-import { Footer } from '../../layout/Footer';
-import Order from "./Order";
+import React, { useState } from 'react';
+import Order from "./Order"
+import CartItem from './CartItem';
+export default function ShoppingCard() {
 
-import CartItem from '../../components/CartItem';
+// import {
+//   Card,
+//   Checkbox,
+//   Button,
+//   Typography,
+// } from "@material-tailwind/react";
+// import CartItem from '../../components/CartItem';
 
-function Cart (){
-  // const carts=useState((state)=> state.carts);
+// function Cart (){
+//   // const carts=useState((state)=> state.carts);
   return (
     <div className="bg-white">
       <div className="py-8 max-w-7x1 container mx-auto px-4 ">
@@ -36,4 +43,4 @@ function Cart (){
     </div>
   )
 }
-export default Cart;
+// export default Cart;

@@ -25,7 +25,7 @@ export function Footer() {
 
         <Typography
           as="a"
-          href="/"
+          href="/home"
           variant="h6"
           className="flex mr-4 cursor-pointer py-1.5 lg:ml-2 items-center"
         > 

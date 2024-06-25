@@ -6,6 +6,7 @@ import {
     Button,
     Typography,
   } from "@material-tailwind/react";
+import { Link } from 'react-router-dom';
 
 function Signup() {
   const [showPassword, setShowPassword] = useState(false);
@@ -172,9 +173,10 @@ function Signup() {
                     </Button>
                     <Typography color="gray" className="my-4 text-center font-normal">
                         Bạn đã có tài khoản?{" "}
-                        <a href="#" className="font-medium text-blue-500">
+                        <Link to="/login" className="font-medium text-blue-500">Đăng Ký</Link>
+                        {/* <a href="/login" className="font-medium text-blue-500">
                         Đăng Nhập
-                        </a>
+                        </a> */}
                     </Typography>
                     <div className="flex items-center">
                         <hr className="w-full border-t border-gray-500" />

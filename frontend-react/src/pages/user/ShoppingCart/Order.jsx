@@ -1,17 +1,20 @@
-// import React, { useState } from 'react';
+import React, { useState } from 'react';
 import {
+    Card,
+    Checkbox,
+    Button,
     Typography,
     Select,
     Option,
   } from "@material-tailwind/react";
   
     function Order () {
-    // const [formData, setFormData] = useState({
-    //     fullname: '',
-    //     phone: '',
-    //     // address '',
-    //     // ... (các trường khác)
-    //   });
+    const [formData, setFormData] = useState({
+        fullname: '',
+        phone: '',
+        // address '',
+        // ... (các trường khác)
+      });
   return (
     <div className="p-6 mt-6 bg-white border rounded-lg shadow-md md:mt-0">
       <div className="mb-2 ">
@@ -28,7 +31,7 @@ import {
             placeholder='Họ và tên' 
             required
             autoFocus                 
-            className="block w-full bg-white px-2 py-2 text-black placeholder:text-gray-500  sm:text-sm sm:leading-6 rounded"/>
+            class="block w-full bg-white px-2 py-2 text-black placeholder:text-gray-500  sm:text-sm sm:leading-6 rounded"/>
         </div>
         <div className="space-y-2 border border-black rounded">
           <input
@@ -37,7 +40,7 @@ import {
             placeholder='Số điện thoại' 
             required
             autoFocus                 
-            className="block w-full bg-white px-2 py-2 text-black  placeholder:text-gray-500  sm:text-sm sm:leading-6 rounded"/>
+            class="block w-full bg-white px-2 py-2 text-black  placeholder:text-gray-500  sm:text-sm sm:leading-6 rounded"/>
         </div>
         <Typography variant="h6" color="black" className="">
             Địa chỉ giao hàng
@@ -49,7 +52,7 @@ import {
                     placeholder='Địa chỉ' 
                     required
                     autoFocus                 
-                    className="block w-full bg-white px-2 py-2 text-black  placeholder:text-gray-500  sm:text-sm sm:leading-6 rounded"/>
+                    class="block w-full bg-white px-2 py-2 text-black  placeholder:text-gray-500  sm:text-sm sm:leading-6 rounded"/>
                 </div>
         <Typography variant="h6" color="black" className="">
             Chọn phương thức thanh toán

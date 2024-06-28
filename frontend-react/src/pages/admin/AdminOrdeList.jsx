@@ -23,7 +23,7 @@ const OrderList = ({ orders, onApprove, onReject }) => {
                 <td className="border border-gray-300 px-4 py-2 text-center">${order.total}</td>
                 <td className="border border-gray-300 px-4 py-2 text-center">{order.status}</td>
                 <td className="border border-gray-300 px-4 py-2 text-center">
-                  {order.status === 'Chờ xác nhận' && (
+                  {order.status === 'Pending' && (
                     <>
                       <button
                         onClick={() => onApprove(order.id)}

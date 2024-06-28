@@ -19,7 +19,7 @@ const currentYear = new Date().getFullYear();
  
 export function Footer() {
   return (
-    <footer className="relative w-full">
+    <footer className="w-full">
       <div className="w-full px-8 mx-auto max-w-7xl">
         <div className="grid justify-between grid-cols-1 gap-4 md:grid-cols-2">
 
@@ -43,7 +43,7 @@ export function Footer() {
             MOBILE
           </p>        
         </Typography>
-          <div className="grid justify-between grid-cols-3 gap-4">
+          {/* <div className="grid justify-between grid-cols-3 gap-4">
             {LINKS.map(({ title, items }) => (
               <ul key={title}>
                 <Typography
@@ -67,7 +67,7 @@ export function Footer() {
                 ))}
               </ul>
             ))}
-          </div>
+          </div> */}
         </div>
         <div className="flex flex-col items-center justify-center w-full py-4 mt-12 border-t border-blue-gray-50 md:flex-row md:justify-between">
           <Typography
@@ -77,7 +77,7 @@ export function Footer() {
             &copy; {currentYear} <a href="https://material-tailwind.com/">Material Tailwind</a>. All
             Rights Reserved.
           </Typography>
-          <div className="flex gap-4 text-blue-gray-900 sm:justify-center">
+          {/* <div className="flex gap-4 text-blue-gray-900 sm:justify-center">
             <Typography as="a" href="#" className="transition-opacity opacity-80 hover:opacity-100">
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path
@@ -119,7 +119,7 @@ export function Footer() {
                 />
               </svg>
             </Typography>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

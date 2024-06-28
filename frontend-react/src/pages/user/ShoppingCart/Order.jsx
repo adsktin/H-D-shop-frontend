@@ -1,20 +1,17 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import {
-    Card,
-    Checkbox,
-    Button,
     Typography,
     Select,
     Option,
   } from "@material-tailwind/react";
   
     function Order () {
-    const [formData, setFormData] = useState({
-        fullname: '',
-        phone: '',
-        // address '',
-        // ... (các trường khác)
-      });
+    // const [formData, setFormData] = useState({
+    //     fullname: '',
+    //     phone: '',
+    //     // address '',
+    //     // ... (các trường khác)
+    //   });
   return (
     <div className="p-6 mt-6 bg-white border rounded-lg shadow-md md:mt-0">
       <div className="mb-2 ">

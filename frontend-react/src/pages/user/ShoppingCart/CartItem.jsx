@@ -1,4 +1,12 @@
-// import React, { useState } from 'react';
+import React, { useState } from 'react';
+
+// import {
+//   decreaseQuantity,
+//   increaseQuantity,
+//   removeFromCart,
+// } from "../redux/carts/actions";
+// import { addQuantity, removeQuantity } from "../redux/products/actions";
+// import { IoMdClose } from "react-icons/io";
 
 const CartItem =() =>{
   return (

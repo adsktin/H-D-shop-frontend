@@ -31,7 +31,7 @@ import {
             placeholder='Họ và tên' 
             required
             autoFocus                 
-            class="block w-full bg-white px-2 py-2 text-black placeholder:text-gray-500  sm:text-sm sm:leading-6 rounded"/>
+            className="block w-full bg-white px-2 py-2 text-black placeholder:text-gray-500  sm:text-sm sm:leading-6 rounded"/>
         </div>
         <div className="space-y-2 border border-black rounded">
           <input
@@ -40,7 +40,7 @@ import {
             placeholder='Số điện thoại' 
             required
             autoFocus                 
-            class="block w-full bg-white px-2 py-2 text-black  placeholder:text-gray-500  sm:text-sm sm:leading-6 rounded"/>
+            className="block w-full bg-white px-2 py-2 text-black  placeholder:text-gray-500  sm:text-sm sm:leading-6 rounded"/>
         </div>
         <Typography variant="h6" color="black" className="">
             Địa chỉ giao hàng
@@ -52,7 +52,7 @@ import {
                     placeholder='Địa chỉ' 
                     required
                     autoFocus                 
-                    class="block w-full bg-white px-2 py-2 text-black  placeholder:text-gray-500  sm:text-sm sm:leading-6 rounded"/>
+                    className="block w-full bg-white px-2 py-2 text-black  placeholder:text-gray-500  sm:text-sm sm:leading-6 rounded"/>
                 </div>
         <Typography variant="h6" color="black" className="">
             Chọn phương thức thanh toán

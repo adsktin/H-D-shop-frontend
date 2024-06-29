@@ -19,7 +19,11 @@ import AdminAccount from "./pages/Admin/AdminAccount";
 import AdminProduct from "./pages/Admin/AdminProduct";
 import AdminProductColor from "./pages/Admin/AdminProductColor";
 import SlideShow from "./pages/Admin/AdminSlideShow";
-import OrderAdd from "./pages/Admin/AdminOrderAdd";
+import AdminOrder from "./pages/Admin/AdminOrder";
+import AdminPaymentMethods from "./pages/Admin/AdminPaymentMethods";
+import AdminSupplier from "./pages/Admin/AdminSupplier";
+import EvaluateComment from "./pages/Admin/AdminEvaluateComment";
+import ImportBill from "./pages/Admin/AdminImportBill";
 
 
 const router = createBrowserRouter([
@@ -121,8 +125,24 @@ const router = createBrowserRouter([
                   },
                   {
                         path: 'order',
-                        element: <OrderAdd/>,
+                        element: <AdminOrder/>,
                   },
+                  {
+                        path: 'supplier',
+                        element: <AdminSupplier/>,
+                  },
+                  {
+                        path: 'payment',
+                        element: <AdminPaymentMethods/>,
+                  },
+                  {
+                        path: 'evaluatecomment',
+                        element: <EvaluateComment/>,
+                  },
+                  {
+                        path: 'importbill',
+                        element: <ImportBill/>,
+                  },        
             ]
       },
 ])

@@ -201,7 +201,7 @@ export default function AdminLayout() {
         </Link>
         {/*  */}
         {/* color */}
-        <Link>
+        <Link to='/admin/supplier'>
          <ListItem>
           <ListItemPrefix>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
@@ -216,7 +216,7 @@ export default function AdminLayout() {
         </Link>
         {/*  */}
          {/* version */}
-        <Link>
+        <Link to='/admin/importbill'>
          <ListItem>
           <ListItemPrefix>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
@@ -231,7 +231,7 @@ export default function AdminLayout() {
         </Link>
         {/*  */}
         {/* Order */}
-        <Link>
+        <Link to='/admin/evaluatecomment'>
          <ListItem>
           <ListItemPrefix>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
@@ -260,7 +260,7 @@ export default function AdminLayout() {
         </ListItem>
         </Link>
         {/*  */}
-        <Link>
+        <Link to="/admin/payment">
          <ListItem>
           <ListItemPrefix>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
